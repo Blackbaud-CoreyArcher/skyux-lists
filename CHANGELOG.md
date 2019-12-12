@@ -1,3 +1,7 @@
+# 3.7.2 (2019-12-12)
+
+- Fixed the repeater items component to properly vertically align header items. [#101](https://github.com/blackbaud/skyux-lists/pull/101)
+
 # 3.7.1 (2019-11-27)
 
 - Fixed the repeater item component to not steal focus from focusable child elements when they are activated. [#96](https://github.com/blackbaud/skyux-lists/pull/96)
