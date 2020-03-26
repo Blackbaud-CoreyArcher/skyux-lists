@@ -1,0 +1,17 @@
+@import '~@skyux/theme/scss/mixins';
+
+.quick-filter-label {
+    padding-right: 10px;
+}
+
+.quick-filter-button-filtered {
+    background-color: $sky-background-color-info-light;
+}
+
+.quick-filter-container /deep/ .sky-toolbar-container {
+    border-top: none;
+}
+
+.quick-filter-button-add {
+    color: $sky-text-color-action-primary;
+}

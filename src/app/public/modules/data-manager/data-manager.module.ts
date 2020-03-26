@@ -44,6 +44,10 @@ import {
 } from '../filter';
 
 import {
+  SkyFilterToolbarModule
+} from '../filter-toolbar';
+
+import {
   SkyRepeaterModule
 } from '../repeater';
 
@@ -97,6 +101,7 @@ import {
     FormsModule,
     SkyCheckboxModule,
     SkyFilterModule,
+    SkyFilterToolbarModule,
     SkyI18nModule,
     SkyIconModule,
     SkyModalModule,

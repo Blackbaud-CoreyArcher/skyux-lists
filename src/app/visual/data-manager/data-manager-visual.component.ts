@@ -17,7 +17,8 @@ import {
 
 import {
   SkyDataManagerService,
-  SkyDataManagerState
+  SkyDataManagerState,
+  SkyDataManagerConfig
 } from '../../public';
 
 @Component({
@@ -33,7 +34,7 @@ export class DataManagerVisualComponent {
 
   public activeViewId: string;
 
-  public dataManagerConfig = {
+  public dataManagerConfig: SkyDataManagerConfig = {
     filterModalComponent: SkyDataManagerFiltersModalDemoComponent,
     sortOptions: [
       {
@@ -47,6 +48,23 @@ export class DataManagerVisualComponent {
         label: 'Name (Z - A)',
         descending: true,
         propertyName: 'name'
+      }
+    ],
+    filterToolbarOptions: [
+      {
+        id: '1',
+        name: 'Hide Orange',
+        type: 'boolean'
+      },
+      {
+        id: '2',
+        name: 'Find text',
+        type: 'text'
+      },
+      {
+        id: '3',
+        name: 'Select',
+        type: 'multiselect'
       }
     ]
   };

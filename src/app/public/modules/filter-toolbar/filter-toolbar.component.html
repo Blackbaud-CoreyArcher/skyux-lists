@@ -1,0 +1,60 @@
+<div data-bbauto-field="quick-filter-bar">
+    <sky-toolbar class="quick-filter-container">
+        <sky-toolbar-item>
+            <div class="quick-filter-label sky-emphasized">
+                {{ 'skyux_filter_toolbar_title' | skyLibResources }}
+            </div>
+        </sky-toolbar-item>
+        <sky-toolbar-item  *ngFor="let item of filters">
+            <button type="button"
+                [ngClass]="{'quick-filter-button-filtered': item.value !== undefined}"
+                class="sky-btn sky-btn-default"
+                (click)="onFilterSelected(item.id)"
+                data-bbauto-field="filter-value-button-with-popover"
+                [skyPopover]="filterPopover"
+                skyPopoverTrigger="mouseenter"
+                skyPopoverPlacement="below"
+            >
+                {{item.name}}
+                <sky-icon *ngIf="filterCanBeUpdated(item)" icon="caret-down" size="sm"></sky-icon>
+            </button>
+            <sky-popover
+              #filterPopover
+            >
+            <span>{{item.type}}</span>
+            <!-- <span *ngIf="item.type === 'lookup'" data-bbauto-field="quick-filter-popover-lookup">
+              <strong>{{getLookupOperatorText(item.operator)}}</strong>
+              <br/>
+              {{getPopoverText(item)}}
+            </span>
+            <span *ngIf="item.type === 'complextypecollection'" data-bbauto-field="quick-filter-popover-complex">
+              <span *ngFor="let field of item.value">
+                <strong>{{field.name}}:</strong>
+                <br/>
+                {{getPopoverText(field)}}
+                <br/>
+                <br/>
+              </span>
+            </span> -->
+            </sky-popover>
+        </sky-toolbar-item>
+        <sky-toolbar-item>
+            <button type="button"
+              class="quick-filter-button-add sky-btn sky-btn-default"
+              (click)="onFilterAddClick()"
+              title="{{ 'skyux_filter_toolbar_filter_picker_action' | skyLibResources }}"
+              data-bbauto-field="filter-picker-button"
+            >
+                <sky-icon icon="filter" size="lg"></sky-icon>
+            </button>
+        </sky-toolbar-item>
+        <button *ngIf="hasActiveFilters"
+          type="button"
+          class="sky-btn sky-btn-link"
+          (click)="onClearFilters()"
+          data-bbauto-field="clear-filters-button"
+        >
+          {{ 'skyux_filter_toolbar_clear_filters_button_title' | skyLibResources }}
+      </button>
+    </sky-toolbar>
+</div>

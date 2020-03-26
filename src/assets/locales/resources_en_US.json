@@ -39,6 +39,38 @@
     "_description": "Text for the filter summary component",
     "message": "Filter"
   },
+  "skyux_filter_toolbar_clear_confirm_cancel": {
+      "_description": "Text for clear quick filters confirm form cancel button",
+      "message": "Cancel"
+  },
+  "skyux_filter_toolbar_clear_confirm_detail": {
+      "_description": "Text for clear quick filters confirm form",
+      "message": "This will not remove any filters, but any values you have set will be removed."
+  },
+  "skyux_filter_toolbar_clear_confirm_message": {
+      "_description": "Text for clear quick filters confirm form",
+      "message": "Are you sure you want to reset all filters to their original values?"
+  },
+  "skyux_filter_toolbar_clear_confirm_yes": {
+      "_description": "Text for clear quick filters confirm form confirm button",
+      "message": "Clear values"
+  },
+  "skyux_filter_toolbar_clear_filters_button_title": {
+      "_description": "Text for clear quick filters action",
+      "message": "Clear all values"
+  },
+  "skyux_filter_toolbar_filter_picker_action": {
+      "_description": "Tooltip text display for the filter button",
+      "message": "Choose filters"
+  },
+  "skyux_filter_toolbar_title": {
+      "_description": "Label for quick filter bar",
+      "message": "Filters:"
+  },
+  "skyux_filter_toolbar_popover_more_values_label": {
+      "_description": "Displays how many more values are not displayed in a quick filter popover",
+      "message": "and {0} more"
+  },
   "skyux_infinite_scroll_load_more_button": {
     "_description": "Text for loading more in the infinite scroll button",
     "message": "Load more"

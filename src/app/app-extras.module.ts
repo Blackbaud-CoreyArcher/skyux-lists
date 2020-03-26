@@ -30,7 +30,8 @@ import {
 } from '@skyux/modals';
 
 import {
-  SkyDropdownModule
+  SkyDropdownModule,
+  SkyPopoverModule
 } from '@skyux/popovers';
 
 import {
@@ -78,6 +79,7 @@ import {
     SkyInlineDeleteModule,
     SkyModalModule,
     SkyPagingModule,
+    SkyPopoverModule,
     SkyRepeaterModule,
     SkySortModule,
     SkyToolbarModule,
